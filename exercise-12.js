@@ -1,7 +1,11 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    var geometri = arr[1]/arr[0]==arr[arr.length-1]/arr[arr.length-2]
-    return geometri;
+    var deret = []
+    for (var i=arr.length-1; i>0; i--) {
+        deret.push(arr[i]/arr[i-1]==arr[arr.length-1]/arr[arr.length-2]);
+        deret.sort()
+    }
+    return deret[0]===true;
 } 
   
   // TEST CASES

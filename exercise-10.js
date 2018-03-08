@@ -4,9 +4,7 @@ function perkalianUnik(arr) {
     for (var i=0; i<arr.length; i++) {
         var num = 1;
         for (var j=0; j<arr.length; j++) {
-            if (i==j) {
-                continue;
-            }else {
+            if (i!=j) {
                 num*=arr[j];
             }
             

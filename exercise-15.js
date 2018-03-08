@@ -1,5 +1,5 @@
 function groupAnimals(animals) {
-    animals.sort()
+    animals.sort();
     var arrAnimal = [];
     for (var i=0; i<animals.length; i++) {
         var arrK = [];
@@ -7,7 +7,7 @@ function groupAnimals(animals) {
             arrK.push(animals[i])  
             for (var j=i+1; j<animals.length; j++) {
                 if(animals[i][0]===animals[j][0]) {
-                    arrK.push(animals[j]);                     
+                    arrK.push(animals[j]);                    
                 }    
             }
             arrAnimal.push(arrK);
